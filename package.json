@@ -1,0 +1,23 @@
+{
+  "bin": "dist/index.js",
+  "name": "latex-bibliography-sort",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && pkg ."
+  },
+  "dependencies": {
+    "@types/node": "^17.0.22",
+    "pkg": "^5.5.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "pkg": {
+    "targets": [
+      "node16-linux"
+    ],
+    "scripts": "dist/**/*.js",
+    "outputPath": "out"
+  }
+}
